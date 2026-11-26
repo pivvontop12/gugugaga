@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+data/
+downloads/
+node_modules/
+*.sqlite*
+*.pem
+*.key
+*admin*.txt
+*.zip
