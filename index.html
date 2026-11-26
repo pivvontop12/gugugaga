@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111113">
+  <meta name="description" content="NovaMacro Premium portal status and customer support.">
+  <title>NovaMacro Premium Portal</title>
+  <link rel="icon" href="./public/novamacro.png">
+  <link rel="stylesheet" href="./public/app.css">
+  <style>
+    .portal-home {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background: radial-gradient(ellipse at 50% 0%, #241b2d, var(--bg) 54%);
+    }
+    .portal-panel {
+      width: min(100%, 520px);
+      gap: 20px;
+    }
+    .portal-notice {
+      padding: clamp(20px, 5vw, 36px);
+      border-top-color: #574769;
+    }
+    .portal-notice .muted {
+      max-width: 36ch;
+    }
+  </style>
+</head>
+<body>
+  <main class="portal-home">
+    <div class="portal-panel stack">
+      <div class="brand">
+        <img src="./public/novamacro.png" width="34" height="34" alt="">
+        <span>NovaMacro</span>
+      </div>
+      <section class="portal-notice card stack" aria-labelledby="portal-title">
+        <p class="status wait">Portal offline</p>
+        <h1 id="portal-title">NovaMacro Premium</h1>
+        <p class="muted">Account access, license activation and Premium downloads are currently unavailable.</p>
+        <div class="actions">
+          <a class="button" href="https://discord.gg/sXxVXtgSzu">Contact support</a>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
